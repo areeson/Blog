@@ -1,0 +1,1 @@
+This is my first blog created from scratch. The blog is my first project since I finished CS50x. I'm using the Django framework and Python.
