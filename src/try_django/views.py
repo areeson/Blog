@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template.loader import get_template
 
+from .forms import ContactForm
 # Don't Repeat Yourself = DRY
 # Below the functions are used to allow for parent/child
 
@@ -19,7 +20,15 @@ def about_page(request):
 
 
 def contact_page(request):
-    return render(request, "contact_us.html", {"title": "Contact Us"})
+    form = ContactForm(request.POST or None)
+    if form.is_valid():
+        print(form.cleaned_data)
+        form = ContactForm()
+    context = {
+        "title": "Contact Us",
+        "form": form
+    }
+    return render(request, "form.html", context)
 
 
 def example_page(request):
