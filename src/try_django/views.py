@@ -3,15 +3,15 @@ from django.shortcuts import render
 from django.template.loader import get_template
 
 from .forms import ContactForm
+from blog.models import BlogPost
 # Don't Repeat Yourself = DRY
 # Below the functions are used to allow for parent/child
 
 
 def home_page(request):
     my_title = "Hello there...."
-    context = {"title": "my title"}
-    if request.user.is_authenticated:
-        context = {"title": my_title, "my_list": [1, 2, 3, 4, 5]}
+    qs = BlogPost.objects.all()[:5]
+    context = {"title": "Andrew Reeson", 'blog_list': qs}
     return render(request, "home.html", context)
 
 
