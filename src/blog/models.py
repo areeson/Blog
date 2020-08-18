@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 
 # Create your models here.
@@ -7,8 +8,12 @@ from django.db import models
 # 2. python manage.py makemigrations
 # 3. python manage.py migrate
 
+User = settings.AUTH_USER_MODEL
+
 
 class BlogPost(models.Model):
+    user = models.ForeignKey(User, default=1, null=True,
+                             on_delete=models.SET_NULL)
     title = models.CharField(max_length=120)
     slug = models.SlugField(unique=True)  # hello world -> hello-world
     content = models.TextField(null=True, blank=True)
