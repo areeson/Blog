@@ -17,3 +17,12 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=120)
     slug = models.SlugField(unique=True)  # hello world -> hello-world
     content = models.TextField(null=True, blank=True)
+
+    def get_absolute_url(self):
+        return f"/blog/{self.slug}"
+
+    def get_edit_url(self):
+        return f"/blog/{self.get_absolute_url}/edit"
+
+    def get_delete_url(self):
+        return f"/blog/{self.get_absolute_url}/delete"
