@@ -40,6 +40,7 @@ INSTALLED_APPS = [  # little tiny **"components"** that build up the project
     'django.contrib.staticfiles',
 
     'blog',
+    'searches',
 ]
 
 MIDDLEWARE = [
