@@ -18,6 +18,8 @@ from .views import(
     about_page,
     contact_page,
     example_page,
+    reesontech_page,
+    reesonstudio_page,
 )
 from django.conf import settings
 from django.contrib import admin
@@ -30,6 +32,8 @@ from searches.views import search_view
 
 urlpatterns = [
     path('', home_page),
+    path('reesontech', reesontech_page),
+    path('reesonstudio', reesonstudio_page),
 
     path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),

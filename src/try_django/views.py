@@ -9,10 +9,21 @@ from blog.models import BlogPost
 
 
 def home_page(request):
-    my_title = "Hello there...."
     qs = BlogPost.objects.all()[:5]
     context = {"title": "Andrew Reeson", 'blog_list': qs}
     return render(request, "home.html", context)
+
+
+def reesontech_page(request):
+    qs = BlogPost.objects.all()[:5]
+    context = {"title": "Andrew Reeson", 'blog_list': qs}
+    return render(request, "reesontech.html", context)
+
+
+def reesonstudio_page(request):
+    qs = BlogPost.objects.all()[:5]
+    context = {"title": "Andrew Reeson", 'blog_list': qs}
+    return render(request, "reesonstudio.html", context)
 
 
 def about_page(request):

@@ -1,0 +1,12 @@
+{% extends "basetech.html" %}
+
+{% block head_title %}ReesonTech{% endblock %}
+
+{% block content %}
+
+
+{% for a in blog_list %}
+{% include 'blog/list-inline.html' with blog_post=a truncate=True %}
+{% endfor %}
+<!-- {{ user}} -->
+{% endblock %}

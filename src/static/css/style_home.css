@@ -1,0 +1,60 @@
+.wrapper {  
+	overflow:hidden;
+	}
+	.wrapper div {
+	min-height: 200px;
+	padding: 10px;
+	}
+	#one {
+	background-color: #fed77c;
+	float:left; 
+	width: 50%;
+	border-right:2px solid #000;
+	}
+	#two { 
+	background-color: #9b9b9b;
+	overflow:hidden;
+	min-height:170px;
+	}
+	#studio-button{
+	margin-top: 50%;
+	margin-bottom: 50%;
+	margin-left: 35%;
+	margin-right: 35%;
+    font-size: 25px;
+	background-color: #73BCBC;
+	}
+	#tech-button{
+	margin-top: 50%;
+	margin-bottom: 50%;
+	margin-left: 43%;
+    margin-right: 35%;
+    font-size: 25px;
+	background: black;
+	color: #2dba2d;;
+}
+
+@media screen and (max-width: 400px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
+  }
+  #studio-button{
+	margin-top: 50%;
+	margin-bottom: 50%;
+	margin-left: 35%;
+	margin-right: 35%;
+	background-color: #73BCBC;
+	}
+	#tech-button{
+	margin-top: 50%;
+	margin-bottom: 50%;
+	margin-left: 35%;
+    margin-right: 35%;
+	background: black;
+	color: #2dba2d;;
+}
+}

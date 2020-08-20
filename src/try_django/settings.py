@@ -127,7 +127,7 @@ STATIC_CDN_PATH = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn_test')
 
 STATIC_ROOT = os.path.join(STATIC_CDN_PATH, 'static')  # live cdn AWS S3
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles')
+    os.path.join(BASE_DIR, 'static')
 ]
 
 MEDIA_ROOT = os.path.join(STATIC_CDN_PATH, 'media')
