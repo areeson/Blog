@@ -9,10 +9,9 @@
 	background-color: #fed77c;
 	float:left; 
 	width: 50%;
-	border-right:2px solid #000;
 	}
 	#two { 
-	background-color: #9b9b9b;
+	background-color: #2e2e2e;
 	overflow:hidden;
 	min-height:170px;
 	}
@@ -29,20 +28,21 @@
 	margin-bottom: 50%;
 	margin-left: 43%;
     margin-right: 35%;
-    font-size: 25px;
+    font-size: 250px;
 	background: black;
-	color: #2dba2d;;
+	color: #86E971;
 }
 
+
 @media screen and (max-width: 400px) {
-   #one { 
+#one { 
     float: none;
     margin-right:0;
     width:auto;
     border:0;
     border-bottom:2px solid #000;    
-  }
-  #studio-button{
+	}
+	#studio-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
 	margin-left: 35%;
@@ -56,5 +56,5 @@
     margin-right: 35%;
 	background: black;
 	color: #2dba2d;;
-}
+	}
 }
