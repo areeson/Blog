@@ -6,14 +6,15 @@
 	padding: 10px;
 	}
 	#one {
-	background-color: #fed77c;
+	background-image: url('../../static/images/clouds.jpg');
+	background-size: 100%;
 	float:left; 
 	width: 50%;
 	}
 	#two { 
-	background-color: #2e2e2e;
-	overflow:hidden;
-	min-height:170px;
+		background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+		overflow:hidden;
+		min-height:170px;
 	}
 	#studio-button{
 	margin-top: 50%;
@@ -21,15 +22,15 @@
 	margin-left: 35%;
 	margin-right: 35%;
     font-size: 25px;
-	background-color: #73BCBC;
+	background-color: #DAC500;
 	}
 	#tech-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
 	margin-left: 43%;
     margin-right: 35%;
-    font-size: 250px;
-	background: black;
+    font-size: 25px;
+	background: #2e2e2e;
 	color: #86E971;
 }
 

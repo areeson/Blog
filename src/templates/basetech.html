@@ -12,12 +12,16 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>{% block head_title %}{% endblock %}</title>
     <div class="site-branding">
+        <a href="/">
+            <img class="logo" src="../static/images/logo.png" alt="logo and link to home">
+        </a>
         <a href="/reesontech" id="header">REESON_TECH</a>
     </div>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_basetech.css' %}" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 </head>
+
 
 <body class="body-tech">
 
@@ -30,16 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" id="nav-bar">
                 <li id="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/blog">BLOG</a>
                 </li>
                 <li id="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/about/">ABOUT</a>
                 </li>
                 <li id="nav-item">
-                    <a class="nav-link" href="/about/">About</a>
-                </li>
-                <li id="nav-item">
-                    <a class="nav-link" href="/contact/">Contact</a>
+                    <a class="nav-link" href="/contact/">CONTACT</a>
                 </li>
             </ul>
         </div>

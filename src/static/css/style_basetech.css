@@ -1,6 +1,7 @@
 .site-branding {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 6.5%;
     text-align: center;
 }
 
@@ -13,7 +14,7 @@
 }
 
 #nav-bar {
-    padding-left: 35%;
+    margin: auto;
 }
 
 #nav-item {
@@ -64,6 +65,7 @@
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     background-color: #2e2e2e;
+    text-align: center;
 }
 
 .navbar-inner {
@@ -71,6 +73,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 }
 .nav-link{
     color:#51768E;
+}
+
+.logo{
+    float: left;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .button{
@@ -98,8 +108,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
         }
         }
 
-
-
+        @media all and (max-width:40em){
+        .logo{ 
+            height: 60px;
+            float: left;
+        }
+        #header{
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: #86E971;
+            font-weight: 300;
+            font-size: 3rem;
+        }
+        }
 
 
 
