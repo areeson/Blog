@@ -3,36 +3,62 @@
 	}
 	.wrapper div {
 	min-height: 200px;
-	padding: 10px;
+	padding: 10px;	
 	}
 	#one {
 	background-image: url('../../static/images/clouds.jpg');
-	background-size: 100%;
+	background-size: cover;
 	float:left; 
 	width: 50%;
+	height: auto;
 	}
 	#two { 
-		background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-		overflow:hidden;
-		min-height:170px;
+	background-image: url('../images/moon.jpg');
+	background-size: cover;
+	overflow:hidden;
+	padding: 0px;
+	min-height:170px;
+	height: auto;
 	}
 	#studio-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
 	margin-left: 35%;
 	margin-right: 35%;
-    font-size: 25px;
+    font-size: 18px;
 	background-color: #DAC500;
+
 	}
 	#tech-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
 	margin-left: 43%;
     margin-right: 35%;
-    font-size: 25px;
+    font-size: 18px;
 	background: #2e2e2e;
 	color: #86E971;
-}
+	}
+
+	.footer{
+	text-align: center;
+	background-color: ;
+	}
+	.footer-list{
+		padding-inline-start: 0px;
+		padding-top: 20px;
+	}
+	.footer-item{
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	.footer-link{
+	color: black;
+	}
+
+
+
+
 
 
 @media screen and (max-width: 400px) {
