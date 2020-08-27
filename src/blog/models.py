@@ -6,6 +6,23 @@ from django.utils import timezone
 
 User = settings.AUTH_USER_MODEL
 
+# Category
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=250, unique=True)
+
+    class Meta:
+        ordering = ('name',)
+        verbose_name = 'category'
+        verbose_name_plural = 'categories'
+
+    def __str__(self):
+        return self.name
+
+# Post
+
 
 class BlogPostQuerySet(models.QuerySet):
     def published(self):
@@ -42,6 +59,8 @@ class BlogPost(models.Model):  # blogpost_set -> queryset
     # id = models.IntegerField() # pk
     user = models.ForeignKey(User, default=1, null=True,
                              on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        Category, null=True, on_delete=models.SET_NULL)
     image = models.ImageField(upload_to='image/', blank=True, null=True)
     title = models.CharField(max_length=120)
     slug = models.SlugField(unique=True)  # hello world -> hello-world
