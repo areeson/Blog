@@ -4,9 +4,8 @@
 
 {% block content %}
 
-
 {% for a in blog_list %}
-{% include 'blog/list-inline.html' with blog_post=a truncate=True %}
+{% include 'rs_blog/list-inline.html' with blog_post=a truncate=True %}
 {% endfor %}
 <!-- {{ user}} -->
 {% endblock %}

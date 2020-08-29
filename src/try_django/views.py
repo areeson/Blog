@@ -4,6 +4,7 @@ from django.template.loader import get_template
 
 from .forms import ContactForm
 from blog.models import BlogPost
+from rs_blog.models import RSBlogPost
 # Don't Repeat Yourself = DRY
 # Below the functions are used to allow for parent/child
 
@@ -21,7 +22,7 @@ def reesontech_page(request):
 
 
 def reesonstudio_page(request):
-    qs = BlogPost.objects.all()[:5]
+    qs = RSBlogPost.objects.all()[:5]
     context = {"title": "Andrew Reeson", 'blog_list': qs}
     return render(request, "reesonstudio.html", context)
 

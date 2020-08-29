@@ -27,13 +27,21 @@ from django.urls import path, re_path, include
 from blog.views import (
     blog_post_create_view,
 )
+from rs_blog.views import (
+    blog_post_create_view,
+)
+
 
 from searches.views import search_view
 
 urlpatterns = [
     path('', home_page),
     path('reesontech', reesontech_page),
+    path('rs-blog/', include('rs_blog.urls')),
+    path('rs-blog-new/', blog_post_create_view),
+
     path('reesonstudio', reesonstudio_page),
+
 
     path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),
