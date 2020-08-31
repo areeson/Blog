@@ -1,10 +1,10 @@
-{% extends "basetech.html" %}
+{% extends "basestudio.html" %}
 
 {% block content %}
 
 <div class='row'>
     {% for object in object_list %}
-    {% include 'rs_blog/list-inline.html' with blog_post=object truncate=True detail=False %}
+    {% include 'rs_blog/list-inline.html' with rsblog_post=object truncate=True detail=False %}
     {% endfor %}
 </div>
 

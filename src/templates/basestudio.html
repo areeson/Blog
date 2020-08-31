@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -9,8 +10,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <h1>Reeson Studio</h1>
     <title>{% block head_title %}{% endblock %}</title>
+    <div class="site-branding">
+        <a href="/">
+            <img class="logo" src="../static/images/logo-dark.png" alt="logo and link to home">
+        </a>
+        <a href="/reesonstudio" id="header">REESON Studio</a>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_basestudio.css' %}" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>

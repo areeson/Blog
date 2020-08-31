@@ -1,24 +1,24 @@
 <div class='<col-12 col-md-7 mb-3 mx-auto'>
     <div class='card {% if not blog_post.publish_date %} border border-warning text-dark {% endif %}'>
         <div class='card-body'>
-            {% if blog_post.image %}
-            <a href="{{ blog_post.get_absolute_url }}">
-                <img src="{{ blog_post.image.url }}" class='card-img-top' />
+            {% if rsblog_post.image %}
+            <a href="{{ rsblog_post.get_absolute_url }}">
+                <img src="{{ rsblog_post.image.url }}" class='card-img-top' />
             </a>
             {% endif %}
-            <a href="{{ blog_post.get_absolute_url }}" class='card-title'>{{ blog_post.title }}</a>
+            <a href="{{ rsblog_post.get_absolute_url }}" class='card-title'>{{ rsblog_post.title }}</a>
             <div class='card-text'>
-                <p class='text-muted' id="publish-date">{{ blog_post.publish_date }}</p>
+                <p class='text-muted' id="publish-date">{{ rsblog_post.publish_date }}</p>
                 <div class="description">
                     {% if truncate %}
-                    {{ blog_post.content|linebreaks|truncatewords:45}}
+                    {{ rsblog_post.content|linebreaks|truncatewords:45}}
                     {% else %}
-                    {{ blog_post.content|linebreaks }}
+                    {{ rsblog_post.content|linebreaks }}
                     {% endif %}
                 </div>
             </div>
             {% if not detail %}
-            {% if not blog_post.publish_date %} Draft {% endif %}
+            {% if not rsblog_post.publish_date %} Draft {% endif %}
             <!-- <div class="read-more">
                 <a href="{{ blog_post.get_absolute_url }}" class="button" style="background-color:#68B2Ce">Read More</a>
             </div> -->

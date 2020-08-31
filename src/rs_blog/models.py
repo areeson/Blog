@@ -76,7 +76,7 @@ class RSBlogPost(models.Model):  # blogpost_set -> queryset
         ordering = ['-publish_date', '-updated', '-timestamp']
 
     def get_absolute_url(self):
-        return f"/blog/{self.slug}"
+        return f"/rs-blog/{self.slug}"
 
     def get_edit_url(self):
         return f"{self.get_absolute_url()}/edit"

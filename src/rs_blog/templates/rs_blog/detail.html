@@ -1,10 +1,10 @@
-{% extends "basetech.html" %}
+{% extends "basestudio.html" %}
 
 {% block content %}
 
 <div class="row">
 
-    {% include 'blog/list-inline.html' with blog_post=object detail=True %}
+    {% include 'rs_blog/list-inline.html' with rsblog_post=object detail=True %}
 
     {% if request.user.is_authenticated %}
     {% if request.user.is_staff %}

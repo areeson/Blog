@@ -17,9 +17,13 @@ from .views import(
     home_page,
     about_page,
     contact_page,
-    example_page,
     reesontech_page,
     reesonstudio_page,
+    gallery_page,
+    rscontact_page,
+    rtcontact_page,
+    rsabout_page,
+    rtabout_page,
 )
 from django.conf import settings
 from django.contrib import admin
@@ -36,21 +40,28 @@ from searches.views import search_view
 
 urlpatterns = [
     path('', home_page),
+    path('about/', about_page),
+    path('contact/', contact_page),
+
+
     path('reesontech', reesontech_page),
-    path('rs-blog/', include('rs_blog.urls')),
-    path('rs-blog-new/', blog_post_create_view),
-
-    path('reesonstudio', reesonstudio_page),
-
-
     path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),
+    path('contact-reesontech/', rtcontact_page),
+    path('about-reesontech/', rtabout_page),
+
+
+    path('reesonstudio', reesonstudio_page),
+    path('rs-blog/', include('rs_blog.urls')),
+    path('rs-blog-new/', blog_post_create_view),
+    path('contact-reesonstudio/', rscontact_page),
+    path('about-reesonstudio/', rsabout_page),
+    path('gallery/', gallery_page),
+
+
     path('search/', search_view),
-    path('about/', about_page),
-    # re_path(r'^blog/?P<lug>\w+)/$', blog_post_detail_page),
-    path('contact/', contact_page),
-    path('example/', example_page),
     path('admin/', admin.site.urls),
+    # re_path(r'^blog/?P<lug>\w+)/$', blog_post_detail_page),
 ]
 
 if settings.DEBUG:
