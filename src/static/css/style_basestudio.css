@@ -1,0 +1,97 @@
+.site-branding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 6.5%;
+    text-align: center;
+}
+
+#header{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+#nav-bar {
+    margin: auto;
+}
+
+#nav-item {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav-link {
+    color: #cdbb3a !important;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.body-tech {
+}
+
+.card-body {
+}
+
+.card-title {
+    padding-top:10px;
+    font-size: 40px;
+    color: #000000 !important;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none !important;
+}
+
+.text-muted{
+    font-size: 15px;
+}
+
+.container-fluid{
+    background-color: #ffff;
+}
+
+.card{
+    background-color: #ffff;
+}
+
+#publish-date {
+    color: #3ba6d0 !important;
+    padding-bottom: 15px;
+}
+
+.logo{
+    float: left;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer{
+	background-color: #f9f9f9;
+	}
+.footer-list{
+	padding-inline-start: 0px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin: 0px;
+    text-align: center;
+	}
+.footer-item{
+    display: inline;
+    text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+.footer-link{
+    color: #cdbb3a;
+    text-decoration: none;
+    }
+.footer-link:hover{
+    text-decoration: none;
+    color: #b6a313;
+}

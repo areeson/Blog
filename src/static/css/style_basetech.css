@@ -8,7 +8,7 @@
 #header{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    color: #86E971;
+    color: #FFEF4D;
     font-weight: 300;
     font-size: 4rem;
 }
@@ -38,7 +38,7 @@
 .card-title {
     padding-top:10px;
     font-size: 40px;
-    color: #86E971 !important;
+    color: #FFEF4D !important;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none !important;
 }
@@ -49,7 +49,7 @@
 
 .container-fluid{
     background-color: #2e2e2e;
-    color: #86E971;
+    color: #FFEF4D;
 }
 
 .card{
@@ -57,7 +57,7 @@
 }
 
 #publish-date {
-    color: #FFEF4D !important;
+    color: #86E971 !important;
     padding-bottom: 15px;
 }
 
@@ -73,6 +73,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 }
 .nav-link{
     color:#51768E;
+}
+
+.nav-link:hover{
+    color:#7dd4ff;
 }
 
 .logo{
@@ -116,7 +120,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
         #header{
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
-            color: #86E971;
+            color: #FFEF4D;
             font-weight: 300;
             font-size: 3rem;
         }
@@ -127,3 +131,38 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 .description{
     color: #d1d1d1;
 }
+
+.footer{
+    background-color: #343a40;	
+}
+.footer-list{
+	padding-inline-start: 0px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin: 0px;
+    text-align: center;
+	}
+.footer-item{
+    display: inline;
+    text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+.footer-link{
+    color: #5AbFF0;
+    text-decoration: none;
+    }
+.footer-link:hover{
+    text-decoration: none;
+    color: #7dd4ff;
+}
+    
+
+
+	.footer-link{
+	color: #5AbFF0;
+    }
+    
+    background-color: #343a40;
