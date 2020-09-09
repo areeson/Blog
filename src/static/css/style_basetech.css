@@ -166,3 +166,45 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     }
     
     background-color: #343a40;
+
+
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+        #about-tech, #about-tech-pic {
+        width: 100% !important;
+        padding: 0px;
+        }}
+
+        .wrapper {  
+            overflow:hidden;
+            }
+            #about-tech {
+            float:left; 
+            width: 50%;
+            height: auto;
+            padding: 8% 8% 8% 8%;
+            }
+            #about-tech-pic { 
+            overflow:hidden;
+            height: auto;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            }
+            #about-tech p{
+                color: #d1d1d1;
+
+            }
+            .title{
+                text-align: center;
+                
+                padding-bottom: 10%;
+            }
+            
+

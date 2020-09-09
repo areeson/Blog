@@ -1,24 +1,21 @@
 .wrapper {  
 	overflow:hidden;
 	}
-	.wrapper div {
-	min-height: 200px;
-	padding: 10px;	
-	}
-	#one {
-	background-image: url('../../static/images/clouds.jpg');
+	#button-container-rs {
+	background-image: url('../../static/images/clouds.png');
 	background-size: cover;
 	float:left; 
 	width: 50%;
 	height: auto;
 	}
-	#two { 
-	background-image: url('../images/moon.jpg');
+	#button-container-rt { 
+	background-image: url('../images/moon.png');
 	background-size: cover;
 	overflow:hidden;
-	padding: 0px;
 	height: auto;
 	}
+	
+	
 	#studio-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
@@ -26,7 +23,6 @@
 	margin-right: 35%;
     font-size: 18px;
 	background-color: #DAC500;
-
 	}
 	#tech-button{
 	margin-top: 50%;
@@ -34,9 +30,11 @@
 	margin-left: 43%;
     margin-right: 35%;
     font-size: 18px;
-	background: #2e2e2e;
+	background: #595959;
 	color: #86E971;
 	}
+
+
 
 .footer{
 	background-color: #f9f9f9;
@@ -64,10 +62,6 @@
     text-decoration: none;
     color: #000000;
 }
-
-
-
-
 
 
 @media screen and (max-width: 400px) {

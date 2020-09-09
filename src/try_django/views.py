@@ -28,7 +28,7 @@ def contact_page(request):
         print(form.cleaned_data)
         form = ContactForm()
     context = {
-        "title": "Contact Us",
+        "title": "Message Me",
         "form": form
     }
     return render(request, "form.html", context)
