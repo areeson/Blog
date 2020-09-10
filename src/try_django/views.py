@@ -25,7 +25,7 @@ def about_page(request):
 def contact_page(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
-        print(form.cleaned_data)
+        form.save()
         form = ContactForm()
     context = {
         "title": "Message Me",
@@ -54,7 +54,7 @@ def rtcontact_page(request):
         print(form.cleaned_data)
         form = ContactForm()
     context = {
-        "title": "Contact Us",
+        "title": "Message Me RT",
         "form": form
     }
     return render(request, "form_tech.html", context)
@@ -74,7 +74,7 @@ def rscontact_page(request):
         print(form.cleaned_data)
         form = ContactForm()
     context = {
-        "title": "Contact Us",
+        "title": "Message Me",
         "form": form
     }
     return render(request, "form_studio.html", context)

@@ -21,8 +21,6 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-# Post
-
 
 class BlogPostQuerySet(models.QuerySet):
     def published(self):

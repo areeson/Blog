@@ -5,6 +5,7 @@ from django.http import Http404
 
 # Create your views here.
 from .forms import BlogPostModelForm
+from .forms import ContactForm
 from .models import BlogPost
 
 # CRUD
@@ -13,6 +14,18 @@ from .models import BlogPost
 # POST -> Create / Update / DELETE
 
 # Create Retrieve update Delete (CRUD)
+
+
+def blog_post_contact_view(request):
+    form = ContactForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        form = ContactForm()
+    context = {
+        "title": "Message Me",
+        "form": form
+    }
+    return render(request, "form_tech.html", context)
 
 
 def blog_post_list_view(request):

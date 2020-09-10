@@ -46,7 +46,7 @@
 
 
 
-/*------------------ Reeson Tech View ------------------*/
+/*------------------ Reeson Studio View ------------------*/
 
 .card-title {
     padding-top:10px;
@@ -72,7 +72,7 @@
     color: #3ba6d0 !important;
     padding-bottom: 15px;
 }
-/*------------------ End of Reeson Tech View ------------------*/
+/*------------------ End of Reeson Studio View ------------------*/
 
 /*------------------ Logo ------------------*/
 
@@ -153,7 +153,19 @@
         }
         .title{
             text-align: center;
-            
             padding-bottom: 10%;
         }
 /*------------------ End of About Page ------------------*/
+
+/*------------------ Contact Page ------------------*/
+
+.contact-title {
+
+}
+label {
+    color: red;
+
+}
+form {
+    
+}

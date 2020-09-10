@@ -24,3 +24,9 @@ class BlogPostModelForm(forms.ModelForm):
             raise forms.ValidationError(
                 "This title has already been used. Please try again.")
         return title
+
+
+class ContactForm(forms.Form):
+    full_name = forms.CharField()
+    email = forms.EmailField()
+    content = forms.CharField(widget=forms.Textarea)

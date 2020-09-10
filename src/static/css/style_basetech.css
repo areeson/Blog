@@ -1,3 +1,4 @@
+/*------------------ Header ------------------*/
 .site-branding {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -12,6 +13,12 @@
     font-weight: 300;
     font-size: 4rem;
 }
+/*------------------ End of Header ------------------*/
+
+
+
+
+/*------------------ Nav Bar ------------------*/
 
 #nav-bar {
     margin: auto;
@@ -26,6 +33,27 @@
     color: #5AbFF0 !important;
 }
 /* #FFEF4D */
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: #2e2e2e;
+    text-align: center;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+.nav-link{
+    color:#51768E;
+}
+
+.nav-link:hover{
+    color:#7dd4ff;
+}
+/*------------------ End of Nav Bar ------------------*/
+
+
+
+/*------------------ Reeson Tech View ------------------*/
 
 .body-tech {
     background-color: #2e2e2e;
@@ -56,28 +84,21 @@
     background-color: #2e2e2e;
 }
 
+.description{
+    color: #d1d1d1;
+}
+
 #publish-date {
     color: #86E971 !important;
     padding-bottom: 15px;
 }
+/*------------------ End of Reeson Tech View ------------------*/
 
 
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color: #2e2e2e;
-    text-align: center;
-}
 
-.navbar-inner {
-    background:transparent;
-}
-.nav-link{
-    color:#51768E;
-}
 
-.nav-link:hover{
-    color:#7dd4ff;
-}
+/*------------------ Logo ------------------*/
 
 .logo{
     float: left;
@@ -86,6 +107,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/*------------------ End of Logo ------------------*/
+
+
 
 .button{
         display:inline-block;
@@ -128,9 +152,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 
 
 
-.description{
-    color: #d1d1d1;
-}
+
+/*------------------ Footer ------------------*/
 
 .footer{
     background-color: #343a40;	
@@ -164,9 +187,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 	.footer-link{
 	color: #5AbFF0;
     }
-    
-    background-color: #343a40;
+/*------------------ End of Footer ------------------*/
 
+
+/*------------------ About Page ------------------*/
 
     .row {
         display: flex;
@@ -196,6 +220,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
             height: auto;
             padding-top: 4%;
             padding-bottom: 4%;
+            padding-left: 5%;
             }
             #about-tech p{
                 color: #d1d1d1;
@@ -206,5 +231,5 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
                 
                 padding-bottom: 10%;
             }
-            
+/*------------------ End of About Page ------------------*/
 

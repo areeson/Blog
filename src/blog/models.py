@@ -1,10 +1,18 @@
 from django.conf import settings
 from django.db import models
+from django import forms
 from django.db.models import Q
 from django.utils import timezone
 # Create your models here.
 
 User = settings.AUTH_USER_MODEL
+
+
+class ContactMessage(models.Model):
+    full_name = models.CharField(max_length=120, null=True, blank=True)
+    email = models.EmailField(max_length=120, null=True, blank=True)
+    content = models.TextField(max_length=2000, null=True, blank=True)
+
 
 # Category
 
