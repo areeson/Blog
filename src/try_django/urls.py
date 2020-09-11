@@ -30,10 +30,11 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from blog.views import (
     blog_post_create_view,
-    blog_post_contact_view
+    blog_post_contact_view,
 )
 from rs_blog.views import (
     blog_post_create_view,
+    rsblog_post_contact_view
 )
 
 
@@ -54,6 +55,7 @@ urlpatterns = [
 
 
     path('reesonstudio', reesonstudio_page),
+    path('rs-contact/', rsblog_post_contact_view),
     path('rs-blog/', include('rs_blog.urls')),
     path('rs-blog-new/', blog_post_create_view),
     path('contact-reesonstudio/', rscontact_page),

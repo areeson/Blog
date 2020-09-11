@@ -1,6 +1,13 @@
 from django import forms
 
 from .models import RSBlogPost
+from .models import RSContactMessage
+
+
+class RSContactForm(forms.ModelForm):
+    class Meta:
+        model = RSContactMessage
+        fields = ['full_name', 'email', 'content']
 
 
 class BlogPostForm(forms.Form):

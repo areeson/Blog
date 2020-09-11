@@ -5,7 +5,7 @@ from django.http import Http404
 
 # Create your views here.
 from .forms import BlogPostModelForm
-from .forms import ContactForm
+from .forms import RSContactForm
 from .models import RSBlogPost
 
 # CRUD
@@ -14,6 +14,18 @@ from .models import RSBlogPost
 # POST -> Create / Update / DELETE
 
 # Create Retrieve update Delete (CRUD)
+
+
+def rsblog_post_contact_view(request):
+    form = RSContactForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        form = RSContactForm()
+    context = {
+        "title": "Message Me",
+        "form": form
+    }
+    return render(request, "form_studio.html", context)
 
 
 def blog_post_list_view(request):
@@ -73,15 +85,3 @@ def blog_post_delete_view(request, slug):
         return redirect("/rs-blog")
     context = {"object": obj}
     return render(request, template_name, context)
-
-
-def blog_post_contact_view(request):
-    form = ContactForm(request.POST or None)
-    if form.is_valid():
-        print(form.cleaned_data)
-        form = ContactForm()
-    context = {
-        "title": "Message Me",
-        "form": form
-    }
-    return render(request, "form_studio.html", context)

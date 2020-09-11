@@ -4,7 +4,6 @@ from .views import (
     blog_post_list_view,
     blog_post_update_view,
     blog_post_delete_view,
-    blog_post_contact_view,
 )
 
 urlpatterns = [

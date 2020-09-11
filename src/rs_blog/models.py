@@ -9,6 +9,12 @@ User = settings.AUTH_USER_MODEL
 # Category
 
 
+class RSContactMessage(models.Model):
+    full_name = models.CharField(max_length=120, null=True, blank=True)
+    email = models.EmailField(max_length=120, null=True, blank=True)
+    content = models.TextField(max_length=2000, null=True, blank=True)
+
+
 class Category(models.Model):
     name = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique=True)
