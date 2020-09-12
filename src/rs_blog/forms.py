@@ -9,6 +9,12 @@ class RSContactForm(forms.ModelForm):
         model = RSContactMessage
         fields = ['full_name', 'email', 'content']
 
+        widgets = {
+            'full_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.TextInput(attrs={'class': 'form-control'}),
+            'content': forms.Textarea(attrs={'class': 'form-control'}),
+        }
+
 
 class BlogPostForm(forms.Form):
     title = forms.CharField()
