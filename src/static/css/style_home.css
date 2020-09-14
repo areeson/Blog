@@ -9,6 +9,29 @@
 	padding-bottom: 3%;
 	}
 
+/*------------------ Nav Bar ------------------*/
+
+#home-button{
+	padding-right: 35px;
+}
+
+#studio-navbutton{
+	padding-right: 15px;
+}
+
+#about-navbutton{
+    padding-left: 35px;
+}
+#contact-navbutton{
+    padding-left: 15px;
+}
+
+/*------------------ End of Nav Bar ------------------*/
+
+
+
+/*------------------ Home Page View ------------------*/
+
 #button-container-rs {
 	background-image: url('../../static/images/clouds.png');
 	background-size: cover;
@@ -23,8 +46,6 @@
 	height: auto;
 	}
 
-
-	
 #studio-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
@@ -33,7 +54,6 @@
     font-size: 18px;
 	background-color: #DAC500;
 	}
-
 #tech-button{
 	margin-top: 50%;
 	margin-bottom: 50%;
@@ -44,6 +64,60 @@
 	color: #86E971;
 	}
 
+/*------------------ End of Home Page View ------------------*/
+
+
+
+/*------------------ About Page ------------------*/
+
+.row {
+    display: flex;
+    }
+    
+.column {
+    flex: 50%;
+    }
+
+@media screen and (max-width: 600px) {
+    #about-tech, #about-tech-pic {
+    width: 100% !important;
+    padding: 0px;
+    }}
+
+    .wrapper {  
+        overflow:hidden;
+        }
+        #about {
+            float:left; 
+            width: 50%;
+            height: auto;
+            padding: 8% 8% 8% 8%;
+            }
+        #about-pic { 
+            overflow:hidden;
+            height: auto;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            padding-left: 5%;
+            }
+        #about p{
+            color: #000000 
+            }
+
+        #header {
+            color: #000000 
+            }
+
+        .title{
+            text-align: center;
+                
+            padding-bottom: 10%;
+            }
+/*------------------ End of About Page ------------------*/
+
+
+
+/*------------------ Footer ------------------*/
 
 
 .footer{
@@ -76,6 +150,8 @@
     text-decoration: none;
     color: #000000;
 }
+/*------------------ End of Footer ------------------*/
+
 
 @media screen and (max-width: 600px) {
     #button-container-rs, #button-container-rt {
@@ -89,30 +165,19 @@
 
 }
 
+/*------------------ Contact Page ------------------*/
 
-
-/*@media screen and (max-width: 400px) {
-#one { 
-    float: none;
-    margin-right:0;
-    width:auto;
-    border:0;
-    border-bottom:2px solid #000;    
-	}
-#studio-button{
-	margin-top: 50%;
-	margin-bottom: 50%;
-	margin-left: 35%;
-	margin-right: 35%;
-	background-color: #73BCBC;
-	}
-#tech-button{
-	margin-top: 50%;
-	margin-bottom: 50%;
-	margin-left: 35%;
-    margin-right: 35%;
-	background: black;
-	color: #2dba2d;;
-	}
+.sub-container{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
-*/
+
+#contact-title{
+    padding-top: 3%;
+    text-align: center;
+}
+
+/*------------------ End of Contact Page ------------------*/
+

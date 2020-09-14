@@ -1,7 +1,31 @@
-{% extends "basetech.html" %}
+{% extends "base.html" %}
 
-{% block head_title %}About Us{% endblock %}
+{% block head_title %}About{% endblock %}
 
 {% block content %}
-<p>This is more about home stuff</p>
+
+<div class="wrapper">
+    <div id="about">
+        <div class="title">
+            <h1 id="header">Welcome</h1>
+        </div>
+        <p>Welcome </p>
+        <p>
+            The reason I have this blog is for two main purposes. One of which is a way for me to display some of the
+            recent work that I've done when it comes to my interests and passions within the tech world. The other
+            reason is to hopefully inspire others pick up coding and software development, even if it's a hobby. In time
+            it would be great to even teach others, for now I'll just stick to the inspiring portion.
+        </p>
+        <p>
+            As of lately I've been working with Python the most, but with variety I have dabbled with HTML5, CSS, C+,
+            and a few other parts to computer science such as SQL and databases. Take a look over in the blog section if
+            you'd like to hear about some of these projects and what they entailed.</p>
+        <p>Thanks for stopping by! </p>
+        <p>Email list coming soon, no spam in this house.</p>
+    </div>
+    <div id="about-pic">
+        <img src="../static/images/IMG_9646.jpg" alt="Reeson Tech profile picture">
+    </div>
+</div>
+
 {% endblock %}

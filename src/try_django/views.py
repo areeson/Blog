@@ -21,14 +21,13 @@ def about_page(request):
     return render(request, "about.html", {"title": "About Us"})
 
 
-# this is currently acting as the reeson tech contact page, there is no contact page on the home page yet.
 def contact_page(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
         form.save()
         form = ContactForm()
     context = {
-        "title": "Message Me",
+        "title": "Direct Message",
         "form": form
     }
     return render(request, "form.html", context)

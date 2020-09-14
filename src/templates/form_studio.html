@@ -3,14 +3,16 @@
 {% block content %}
 
 {% if title %}
-<h1 class="contact-title">{{ title }}</h1>
+<h1 id="contact-title">{{ title }}</h1>
 {% endif %}
 
-<div class="form-group">
-    <form method="POST" action="." enctype='multipart/form-data'>
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-secondary">Send</button>
+<div class="sub-container">
+    <div class="form-group">
+        <form method="POST" action="." enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-secondary">Send</button>
+    </div>
 </div>
 
 {% endblock %}

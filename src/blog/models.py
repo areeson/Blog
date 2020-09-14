@@ -6,8 +6,18 @@ from django.utils import timezone
 
 User = settings.AUTH_USER_MODEL
 
+# Contact Page for Reeson Tech:
+
 
 class ContactMessage(models.Model):
+    full_name = models.CharField(max_length=120, null=True, blank=True)
+    email = models.EmailField(max_length=120, null=True, blank=True)
+    content = models.TextField(max_length=2000, null=True, blank=True)
+
+# Contact Page for main landing page (andrewpreeson.com):
+
+
+class HomeContactMessage(models.Model):
     full_name = models.CharField(max_length=120, null=True, blank=True)
     email = models.EmailField(max_length=120, null=True, blank=True)
     content = models.TextField(max_length=2000, null=True, blank=True)
