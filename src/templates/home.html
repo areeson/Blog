@@ -1,15 +1,14 @@
 {% extends "base.html" %}
-
 {% block head_title %}Andrew P. Reeson{% endblock %}
-
 {% block content %}
-
 <div class="wrapper">
-    <div id="button-container-rs">
-        <a href="/reesonstudio" class="btn" id="studio-button">REESON STUDIO</a>
-    </div>
-    <div id="button-container-rt">
+    <div class="column1">
+        <img src="../static/images/1120.jpg" alt="Reeson Studio background picture">
         <a href="/reesontech" class="btn" id="tech-button">REESON TECH</a>
+    </div>
+    <div class="column2">
+        <img src="../static/images/Colorado.jpg" alt="Reeson Tech background pictures">
+        <a href="/reesonstudio" class="btn" id="studio-button">REESON STUDIO</a>
     </div>
 </div>
 {% endblock %}

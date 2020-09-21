@@ -22,7 +22,7 @@ def rsblog_post_contact_view(request):
         form.save()
         form = RSContactForm()
     context = {
-        "title": "Message Me",
+        "title": "Let's Talk Adventure",
         "form": form
     }
     return render(request, "form_studio.html", context)

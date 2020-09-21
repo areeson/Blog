@@ -19,6 +19,7 @@
     </div>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_basetech.css' %}" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 
@@ -32,15 +33,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="nav-bar">
+            <ul class="navbar-nav" id="nav-bar">
                 <li id="nav-item">
-                    <a class="nav-link" href="/blog">BLOG</a>
+                    <a class="nav-link" id="home-navbutton" href="/">Home</a>
                 </li>
                 <li id="nav-item">
-                    <a class="nav-link" href="/about-reesontech/">ABOUT</a>
+                    <a class="nav-link" href="/blog">Tech Blog</a>
                 </li>
                 <li id="nav-item">
-                    <a class="nav-link" href="/rt-contact/">CONTACT</a>
+                    <a class="nav-link" href="/about-reesontech/">About</a>
+                </li>
+                <li id="nav-item">
+                    <a class="nav-link" href="/rt-contact/">Contact</a>
+                </li>
+                <li id="nav-item">
+                    <a class="navbar-brand m-r-0" id="github-button" href="https://github.com/areeson"
+                        target="_blank"><i class="fa fa-github"></i></a>
                 </li>
             </ul>
         </div>

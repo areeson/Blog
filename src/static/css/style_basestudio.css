@@ -20,7 +20,14 @@
 }
 /*------------------ End of Header ------------------*/
 
-
+@media screen and (max-width: 600px) {
+    #header{
+        font-size: 2em;
+    }
+    #sub-header{
+        font-size: 1em;
+    }
+}
 
 
 /*------------------ Nav Bar ------------------*/
@@ -40,6 +47,10 @@
 
 .navbar-inner {
     background:transparent;
+}
+
+#home-navbutton{
+    color: black !important;
 }
 /*------------------ End of Nav Bar ------------------*/
 
@@ -72,6 +83,18 @@
     color: #3ba6d0 !important;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 600px) {
+    .card-title {
+        font-size: 1.5em !important;
+    }
+    #publish-date.text-muted{
+        font-size: .75em !important;
+    }
+    .card-text p{
+        font-size: 14px !important;
+    }
+}
 /*------------------ End of Reeson Studio View ------------------*/
 
 /*------------------ Logo ------------------*/
@@ -83,6 +106,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    .logo{
+        float: left;
+        height: 50px;
+    }}
 /*------------------ End of Logo ------------------*/
 
 
@@ -125,8 +154,17 @@
 @media screen and (max-width: 600px) {
     #about-studio, #about-studio-pic {
     width: 100% !important;
-    padding: 0px;
-    }}
+    padding: 0px !important;
+    }
+    #about-header{
+        font-size: 1.5em !important;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    .title{
+        padding: 0px !important;
+    }
+}
 
     .wrapper {  
         overflow:hidden;
@@ -170,8 +208,10 @@
 }
 
 #contact-title{
-    padding-top: 3%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     text-align: center;
+    font-size: 1.5em;
 }
 
 /*------------------ End of Contact Page ------------------*/

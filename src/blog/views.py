@@ -22,7 +22,7 @@ def blog_post_contact_view(request):
         form.save()
         form = ContactForm()
     context = {
-        "title": "Message Me",
+        "title": "Let's Talk Tech",
         "form": form
     }
     return render(request, "form_tech.html", context)
