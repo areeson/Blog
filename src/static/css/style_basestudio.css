@@ -1,3 +1,12 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*------------------ Header ------------------*/
 .site-branding {
     padding-top: 10px;
@@ -120,8 +129,9 @@
 /*------------------ Footer ------------------*/
 
 .footer{
-	background-color: #f9f9f9;
-	}
+    background-color: #f9f9f9;
+    margin-top: auto;
+    }
 .footer-list{
 	padding-inline-start: 0px;
     padding-top: 20px;
