@@ -42,6 +42,8 @@ INSTALLED_APPS = [  # little tiny **"components"** that build up the project
     'blog',
     'rs_blog',
     'searches',
+
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
