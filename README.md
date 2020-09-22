@@ -1,4 +1,11 @@
-This is my first blog created from scratch. The blog is my first project since I finished CS50x. I'm using the Django framework and Python.
+This is my first Django web based application, a person blog for two purposes.
 
-Note:
-This is day 3 of the project, my initial commit was not being tracked due to some way that I set up my VScode. After learning how to do all git commands from my terminal, I should now have this running a bit smoother on the Github side of the project.
+1:
+To show the more analytical side of me, shown through Reeson Tech. This is a blog for coding and professional work specifically.
+
+2:
+To show the creative side of me, shown through Reeson Studio. This blog will be used more for photography, traveling, personal stories, or anything else I feel that fits.
+
+Together you're looking at a representation of both my "left-brain" analytical side, as well as my "right-brain" creative side.
+
+Welcome.
