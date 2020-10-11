@@ -11,9 +11,9 @@
                 <p class='text-muted' id="publish-date">{{ rsblog_post.publish_date }}</p>
                 <div class="description">
                     {% if truncate %}
-                    {{ rsblog_post.content|linebreaks|truncatewords:45}}
+                    {{ rsblog_post.content|safe|truncatewords:45}}
                     {% else %}
-                    {{ rsblog_post.content|linebreaks }}
+                    {{ rsblog_post.content|safe }}
                     {% endif %}
                 </div>
             </div>
